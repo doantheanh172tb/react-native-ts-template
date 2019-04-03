@@ -1,5 +1,6 @@
 import React from "react";
-import { NetInfo as RNNetInfo, Platform } from "react-native";
+import { Platform } from "react-native";
+import RNNetInfo from "@react-native-community/netinfo";
 import Toast from "../Toast/Toast";
 import { Strings } from "Localization";
 

@@ -99,10 +99,14 @@ class FlatList<ItemT> extends React.Component<Props<ItemT>, State<ItemT>> {
       contentContainerStyle,
       ListEmptyComponent = this.ListEmptyComponent,
       ListHeaderComponent,
-      ListFooterComponent
+      ListFooterComponent,
+      extraData,
+      keyExtractor
     } = this.props;
     return (
       <RNFlatList
+        extraData={extraData}
+        keyExtractor={keyExtractor}
         style={style}
         contentContainerStyle={contentContainerStyle}
         ListEmptyComponent={ListEmptyComponent}

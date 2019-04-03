@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { configStore } from "ReduxManager";
 import { Navigator, AppContainer } from "Navigation";
-import { NetInfo, Loading, Alert, CodePushUpdate } from "Components";
+import { NetInfo, Loading, Alert /*, CodePushUpdate*/ } from "Components";
 
 const { store, persistor } = configStore();
 
@@ -53,7 +53,7 @@ export class App extends React.Component {
           <Loading ref={this.loadingRef} />
           <Alert ref={this.alertRef} />
           <NetInfo />
-          <CodePushUpdate />
+          {/* <CodePushUpdate /> */}
         </PersistGate>
       </Provider>
     );

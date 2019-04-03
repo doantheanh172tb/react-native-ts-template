@@ -1,5 +1,5 @@
 import { createStackNavigator } from "react-navigation";
-import { Login, Start, Home } from "Screens";
+import { Login } from "Screens";
 import getSlideFromRightTransitionConfig from "./transitionConfig";
 
 const AuthenticationStack = createStackNavigator(

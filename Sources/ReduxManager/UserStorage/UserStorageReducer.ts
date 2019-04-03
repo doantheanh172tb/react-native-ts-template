@@ -1,12 +1,11 @@
 import { ActionTypes } from "./UserStorageActionTypes";
-import { AsyncStorage } from "react-native";
+import AsyncStorage from '@react-native-community/async-storage';
 import { persistReducer } from "redux-persist";
 import { UserToken, UserProfile, UserDatabase } from "Models";
-import { Action } from "redux";
 
 type State = {
   userToken?: UserToken;
-  userProfle?: UserProfile;
+  userProfile?: UserProfile;
   userDatabase?: UserDatabase;
 };
 
